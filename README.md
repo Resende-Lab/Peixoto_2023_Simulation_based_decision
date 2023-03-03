@@ -2,10 +2,11 @@
 
 This is a repository with the scripts of the paper: 
 Simulation Based Decision Making and Implementation of Tools in Hybrid Crop Breeding Pipelines
+
 DOI: ...
 
 
-#### Content
+### Content
 
 **Parental update**: This folder contains the script for running the first question of the manuscript: which is the best strategy to update the crossing block at each cycle?
 Four scenarios were implemented:
