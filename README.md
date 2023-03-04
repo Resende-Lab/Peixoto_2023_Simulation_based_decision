@@ -1,10 +1,10 @@
 # Peixoto_2023_Simulation_based_decision
 
-This is a repository with the scripts of the paper: Simulation Based Decision Making and Implementation of Tools in Hybrid Crop Breeding Pipelines (Peixoto et al. 2023). doi: ...
+This is a repository with the scripts of the paper: Simulation Based Decision Making and Implementation of Tools in Hybrid Crop Breeding Pipelines (Peixoto et al. 2023).
 
 ### Especifications
 
-Within both main folders you can find a RUNME.R file. This file will call via 'source()' function all other files inside each folder. In the way that it is, you can run the repetitions for each scenario in parallel. We used the HiPerGator, The University of Florida supercomputer for running all analyses. The code was run in R 4.0.0 and AlphaSimR 1.0.4.
+Within both main folders you can find a RUNME.R file. This file will call via 'source()' function all other files inside each folder. In the way that it is, you can run the repetitions for each scenario in parallel. We used the HiPerGator, The University of Florida supercomputer for running all analyses. The code was run in R 4.0.0 and AlphaSimR 1.0.4. In addition, the folder Plot contains the script for plotting the outputs of both set of simulations.
 
 ### Contents
 
