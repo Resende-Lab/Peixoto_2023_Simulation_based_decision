@@ -88,7 +88,15 @@ df1$Scen = sub( "1", "GSe", df1$Scen)
 
 ###>>>-------- Hybrid mean
 
-#Summarize the values of reps
+#Summarize the values of reps for CI
+temp = ddply(df1,c("Year","Scen","Var_GxE"), summarize,
+             mean = mean(hybridMean),
+             se = sd(hybridMean)/sqrt(length(Reps)),
+             upper.ci = mean + qnorm(0.975) * se,
+             lower.ci = mean - qnorm(0.975) * se)
+
+
+#Summarize the values of reps for Standard error
 temp = ddply(df1,c("Year","Scen","Var_GxE"), summarize,
              mean = mean(hybridMean),
              se = sd(hybridMean)/sqrt(length(Reps)))
