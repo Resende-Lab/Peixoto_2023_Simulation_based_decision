@@ -74,7 +74,15 @@ df1$Scen = sub( "BS", "CONV", df1$Scen)
 
 ###>>>-------- Plotting Population Mean
 
-#Summarize the values over reps
+#Summarize the values of reps for CI
+temp = ddply(df1,c("Year","Scen","Var_GxE"), summarize,
+             mean = mean(parent_mean),
+             se = sd(parent_mean)/sqrt(length(Reps)),
+             upper.ci = mean + qnorm(0.975) * se,
+             lower.ci = mean - qnorm(0.975) * se)
+
+
+#Summarize the values over reps for Standard error
 temp = ddply(df1,c("Year","Scen","Var_GxE"), summarize,
              mean = mean(parent_mean),
              se = sd(parent_mean)/sqrt(length(Reps)))
@@ -108,7 +116,15 @@ ggplot(temp,aes(x=Year,y=mean,color=Scen))+
 #dev.off()
 
 ###>>>-------- Plotting Population Variance 
-#Summarize the values over reps
+#Summarize the values of reps for CI
+temp = ddply(df1,c("Year","Scen","Var_GxE"), summarize,
+             mean = mean(parent_var),
+             se = sd(parent_var)/sqrt(length(Reps)),
+             upper.ci = mean + qnorm(0.975) * se,
+             lower.ci = mean - qnorm(0.975) * se)
+
+
+#Summarize the values over reps for Standard error
 temp = ddply(df1,c("Year","Scen","Var_GxE"), summarize,
              mean = mean(parent_var),
              se = sd(parent_var)/sqrt(length(Reps)))
