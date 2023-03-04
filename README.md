@@ -8,7 +8,7 @@ Within both main folders you can find a RUNME.R file. This file will call via 's
 
 ### Contents
 
-**Parental_update folder**: This folder contains the script for running the first question of the manuscript: which is the best strategy to update the crossing block at each cycle?
+**1.Parental_update folder**: This folder contains the script for running the first question of the manuscript: which is the best strategy to update the crossing block at each cycle?
 
 Four scenarios were implemented:
 
@@ -17,7 +17,7 @@ ii. CONVe: Conventional breeding program (phenotypic selection) with parents of 
 iii. GS: Genomic selection breeding program with parents of the new cycle coming from the top ranked individuals at the first testcross.  
 iv. GSe: Genomic selection breeding program with parents of the new cycle selected from the top ranked individuals in F3/F5 populations.  
 
-**GS_vs_HTP folder**: This folder has the script for the second question of the paper: the feasibility of implementation of genomic selection and high-throughput phenotyping in a hybrid breeding program.
+**2.HTP_vs_GS folder**: This folder has the script for the second question of the paper: the feasibility of implementation of genomic selection and high-throughput phenotyping in a hybrid breeding program.
 
 Four scenarios were evaluated (all with early selection, i.e., parents of the new cycle selected from the top ranked individuals in F3/F5 populations):
 
