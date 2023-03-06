@@ -33,6 +33,6 @@ Any question about the analyses, please, contact me!
 Marco
 
 
-Ms.C. Marco Antonio Peixoto  
+M.Sc. Marco Antonio Peixoto  
 Email: deamorimpeixotom@ufl.edu  
 Page: https://marcopxt.github.io/  
